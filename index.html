@@ -62,8 +62,8 @@
 				</picture>
 			</section>
 		</div>
-		<section class="divider">
-			<div>
+		<section class="divider wrapper debug">
+			<div class="divider__image-group">
 				<picture>
 					<source
 						media="(min-width: 1200px)"
@@ -73,9 +73,13 @@
 						media="(min-width: 768px)"
 						srcset="assets/tablet/image-glass-and-keyboard.jpg"
 					/>
-					<img src="assets/mobile/image-glass-and-keyboard.jpg" alt="" />
+					<img
+						src="assets/mobile/image-glass-and-keyboard.jpg"
+						alt=""
+						class="divider__second-image"
+					/>
 				</picture>
-				<picture class="first-image-content">
+				<picture class="divider__image-container">
 					<source
 						media="(min-width: 1200px)"
 						srcset="assets/desktop/image-phone-and-keyboard.jpg"
@@ -84,12 +88,16 @@
 						media="(min-width: 768px)"
 						srcset="assets/tablet/image-phone-and-keyboard.jpg"
 					/>
-					<img src="assets/mobile/image-phone-and-keyboard.jpg" alt="" />
+					<img
+						src="assets/mobile/image-phone-and-keyboard.jpg"
+						alt=""
+						class="divider__first-image"
+					/>
 				</picture>
 			</div>
-			<div>
-				<h2>Mechanical wireless keyboard</h2>
-				<p>
+			<div class="divider__content">
+				<h2 class="divider__heading">Mechanical wireless keyboard</h2>
+				<p class="paragraph divider__paragraph">
 					The Typemaster keyboard boasts top-notch build and practical design.
 					It offers a wide variety of switches and keycaps, along with reliable
 					wireless connectivity.
