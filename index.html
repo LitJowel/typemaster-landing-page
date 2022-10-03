@@ -23,39 +23,46 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="main.css" />
 
 		<title>Frontend Mentor | Typemaster pre-launch landing page</title>
 	</head>
 	<body>
-		<div>
-			<div>
+		<div class="hero wrapper">
+			<div class="hero__top-container">
 				<a href="#"><img src="assets/shared/logo.svg" alt="Home Logo" /></a
-				><a href="#">Pre-order now</a>
+				><a href="#" class="cta">Pre-order now</a>
 			</div>
-			<section>
-				<div>
-					<h1>Typemaster keyboard</h1>
-					<p>
+			<section class="hero__content-container">
+				<div class="hero__content">
+					<h1 class="hero__heading">Typemaster keyboard</h1>
+					<p class="paragraph hero__paragraph">
 						Improve your productivity and gaming without breaking the bank.
 						Upgrade to a high quality mechanical typing experience.
 					</p>
-					<p><a href="#">Pre-order now</a><span>Release on 5/27</span></p>
+					<p>
+						<a href="#" class="cta">Pre-order now</a
+						><span>Release on 5/27</span>
+					</p>
 				</div>
 				<picture>
 					<source
-						media="(min-width: 1200px)"
+						media="(min-width: 1110px)"
 						srcset="assets/desktop/image-keyboard.jpg"
 					/>
 					<source
-						media="(min-width: 768px)"
+						media="(min-width: 720px)"
 						srcset="assets/tablet/image-keyboard.jpg"
 					/>
-					<img src="assets/mobile/image-keyboard.jpg" alt="" />
+					<img
+						src="assets/mobile/image-keyboard.jpg"
+						alt=""
+						class="hero__image"
+					/>
 				</picture>
 			</section>
 		</div>
-		<section>
+		<section class="divider">
 			<div>
 				<picture>
 					<source
@@ -89,7 +96,7 @@
 				</p>
 			</div>
 		</section>
-		<div>
+		<div class="features">
 			<section>
 				<img src="assets/shared/icon-compatible.svg" alt="icon compatible" />
 				<h3>Highly compatible</h3>
@@ -127,7 +134,7 @@
 				</p>
 			</section>
 		</div>
-		<footer>
+		<footer class="footer">
 			<p><small>Typemaster 2021 | All Rights Reserved</small></p>
 		</footer>
 	</body>
