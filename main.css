@@ -13,6 +13,9 @@
 	--side-margins: 0 24px;
 	--image-radius: 20px;
 }
+html {
+	overflow-x: hidden;
+}
 body {
 	font-family: var(--font-barlow);
 	overflow-x: hidden;
